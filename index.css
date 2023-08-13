@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.Page {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.721);
+    width: 21cm;
+    height: 29.5cm;
+    overflow: hidden;
+  
+}
+
+/* Left section */
+
+
+.left {
+    background-color: rgb(41 46 54);
+
+}
+
+/* Social Icon */
+
+.social_info span img {
+    /* margin-left: 35px; */
+    height: 18px;
+
+}
+
+.social_info span p {
+    font-size: 11px;
+    color: rgb(196, 191, 191);
+}
+
+/* Education/Expertise/Langauge  commen CSS  */
+
+.Education_tittle div {
+    height: 1px;
+    width: 358px;
+    border: 1px solid yellow;
+}
+
+/* <!-- Education CSS  --> */
+
+.Education_tittle h5 {
+    letter-spacing: 1px;
+}
+
+.Education_content h5 {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.Education_content h6 {
+    font-size: 12px;
+
+}
+
+.Education_content p {
+    font-size: 11px;
+    color: rgb(196, 191, 191);
+}
+
+/* <!-- Expertise CSS  --> */
+
+.Expertise_content h6 {
+    font-size: 13px;
+    color: rgb(215, 216, 218);
+
+}
+
+
+/*====rRight section=====*/
+
+.Download_btn {
+    border: none;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.right {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+
+/* Name_section */
+
+.Name_section {
+    height: 150px;
+    width: 580px;
+    background-color: #f4d544;
+    position: absolute;
+    left: -50px;
+    top: 93px;
+    z-index: 1;
+}
+
+
+.Name_section h1 {
+    margin-left: 110px;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.Name_section div h4 {
+    margin-left: 110px;
+    letter-spacing: 3px
+}
+
+/* <!-- Experience_CSS  --> */
+
+.Experience_tittle {
+    position: absolute;
+    top: 310px;
+}
+
+.Experience_tittle div {
+    width: 455px;
+    border: 1px solid #f5e903;
+}
+
+.Experience_content {
+    margin-top: -18px;
+
+}
+
+.Checkup_line {
+    position: absolute;
+    top: 345px;
+    left: 0;
+
+}
+
+.Checkup_line .set_1 #dot1 {
+    font-size: 12px;
+}
+
+.Checkup_line .set_1 .line1 {
+    height: 203px;
+    width: 1px;
+    border: 1px solid black;
+    position: absolute;
+    top: 18px;
+
+}
+
+.Checkup_line .set_1 #dot2 {
+    font-size: 12px;
+    position: absolute;
+    top: 221px;
+    left: 15px;
+}
+
+.para1 p {
+    font-size: 13px;
+    text-align: justify;
+}
+
+
+.set_2 .line2 {
+    height: 199px;
+    width: 1px;
+    border: 1px solid black;
+    position: absolute;
+    top: 232px;
+
+}
+
+.set_2 #dot4 {
+    font-size: 12px;
+    position: absolute;
+    top: 221px;
+    left: 15px;
+}
+
+.set_2 #dot3 {
+    font-size: 12px;
+    position: absolute;
+    top: 431px;
+    left: 15px;
+}
+
+.set_3 .line3 {
+    height: 178px;
+    width: 1px;
+    border: 1px solid black;
+    position: absolute;
+    top: 442px;
+
+}
+
+/* <!-- Reference Section --> */
+
+
+.Reference {
+    position: absolute;
+    top: 980px;
+}
+
+.Reference .line {
+    height: 1px;
+    width: 455px;
+    border: 1px solid #f5e903;
+}
+
+.Reference_content h5 {
+    font-size: 15px;
+}
+
+.Reference_content h6 {
+    font-size: 13px;
+}
+
+.Reference_content p {
+    font-size: 10px;
+}

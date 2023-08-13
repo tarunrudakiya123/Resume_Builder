@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo CV</title>
+
+    <!-- boostrap cdn link ................ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fontAwsome cdn link ......................... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- csss link.................................... -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- html to pdf cdn link .................................... -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <style>
+            *{
+                margin: 0 !important;
+                padding: 0 ;
+            }
+        </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="container Page p-lg-0 d-flex justify-content-center align-item-ceter  d-md-flex d-sm-block  "
+        id="invoice">
+
+        <!-- left................. -->
+        <div class="left col-md-4 p-5 ps-5 h-100 ">
+
+            <!-- Profile Photo and Details -->
+            <div class="profile d-flex justify-content-center align-items-center flex-column text-center">
+                <img src="Images/Cv-demo.png" class="img-fluid   pt-3 pb-3 " alt="">
+
+            </div>
+
+            <!-- Social ditalis  -->
+            <div class="social_info  d-block align-items-center   ">
+
+                <!-- Phone -->
+                <span class="d-flex align-items-center justify-content-start gap-2  ">
+                    <img src="./Images/phone.png" alt="">
+                    <p class=" p-0 m-0 ">+123-456-7890</p>
+                </span>
+
+                <!-- Email -->
+                <span class="d-flex align-items-center justify-content-start gap-2 py-2 mt-1">
+                    <img src="./Images/email.png" alt="">
+                    <p class="y p-0 m-0 ">hello@reallygreatsite.com</p>
+                </span>
+
+                <!-- Website -->
+                <span class="d-flex align-items-center justify-content-start gap-2 mt-1">
+                    <img src="./Images/website.png" alt="">
+                    <p class="p-0 m-0 ">www.reallygreatsite.com</p>
+                </span>
+
+                <!--  location -->
+                <span class="d-flex align-items-center justify-content-start  gap-2  ">
+                    <img src="./Images/loation.png" alt="">
+                    <p class="p-0 m-0 mt-2 "> 123 Anywhere St. Any City,ST 12345</p>
+                </span>
+
+            </div>
+
+            <br>
+
+
+            <!-- Education Details  -->
+            <div class="Educatiion_detalis">
+
+                <div class="Education_tittle ">
+                    <h5 class="  text-white mt-4 fs-5 fw-bold">EDUCATION</h5>
+                    <div></div>
+                </div>
+
+                <div class=" Education_content d-block justify-content-start">
+
+                    <h5 class="text-white mt-3">Bachelor of Design</h5>
+                    <h6 class="text-white mt-1">Wardiere University</h6>
+                    <p>2006 - 2008</p>
+                </div>
+
+
+                <div class=" Education_content d-block justify-content-start">
+
+                    <h5 class="text-white mt-3">Bachelor of Design</h5>
+                    <h6 class="text-white mt-1">Wardiere University</h6>
+                    <p>2006 - 2008</p>
+                </div>
+
+            </div>
+
+
+            <!-- Expertise Details  -->
+            <div class="Education_detalis  ">
+
+
+                <div class="Education_tittle ">
+                    <h5 class="  text-white mt-5 fw-bold">EXPERTISE</h5>
+                    <div></div>
+                </div>
+
+                <div class=" Expertise_content d-block justify-content-start ">
+
+                    <h6 class=" mt-4 ">Digital Marketing</h6>
+                    <h6 class=" mt-3 ">Branding</h6>
+                    <h6 class="mt-3 ">Copywriting</h6>
+                    <h6 class=" mt-3 ">SEO</h6>
+
+                </div>
+
+            </div>
+
+            <!-- Langauge Details  -->
+            <div class="Educatiion_detalis  ">
+
+                <div class="Education_tittle mt-5 ">
+                    <h5 class="  text-white mt-1  fw-bold">LANGAUGE</h5>
+                    <div></div>
+                </div>
+
+                <div class=" Expertise_content d-block justify-content-start ">
+
+                    <h6 class=" mt-2 ">English</h6>
+                    <h6 class=" mt-2  ">French</h6>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- <!=========right Content==========> -->
+
+        <div class="right col-12 col-md-8 p-4 pb-5 ">
+            
+            <button  class="Download_btn fs-4">
+                <i onclick="removebtn()" id="btn" class="fa-solid fa-download"></i>
+            </button>
+
+            
+            <!-- Name_section  -->
+
+            <div class="Name_section d-flex align-items-start justify-content-center flex-column ps-5">
+                <h1 class="fw-bold  ">LORNA ALVARDO</h1>
+
+                <div>
+                    <h4>Art Director</h4>
+                </div>
+
+            </div>
+
+            <br>
+
+            <!-- Experience_tittle  -->
+
+            <div class="Experience_tittle m-0">
+                <h5 class=" ms-1 text-dark  fw-bold">Experience</h5>
+                <div class="ms-1 "></div>
+
+            </div>
+
+            <div class="Checkup_line ms-4">
+                <div class="set_1 ms-3">
+                    <i id="dot1" class="fa-sharp fa-regular fa-circle round"></i>
+                    <p class="line1 ms-1"></p>
+
+                    <i id="dot2" class="fa-sharp fa-regular fa-circle round "></i>
+                </div>
+
+                <!-- Experience_content_1 -->
+                <div class="Experience_content ms-2">
+                    <h6 class="text-secondary ms-4"> Jan 2022 - Present
+                        <br>
+                        Company Name | 123 Anywhere St., Any City
+                        </h4>
+
+                        <div class="para1">
+                            <h5 class="text-dark ms-4 fw-bold">Digital Marketing Manager</h5>
+
+                            <p class="align-items-center ms-4 text-secondary me-5">Lorem ipsum, dolor sit amet
+                                consectetur adipisicing elit. Molestias, molestiae quod. Veritatis autem impedit ut
+                                sapiente numquam possimus aperiam alias quod, cum soluta nam provident vel beatae
+                                perferendis, distinctio itaque molestiae temporibus maxime. Laborum ipsa, necessitatibus
+                                porro eligendi numquam possimus neque, dolorem ab at, veritatis vel enim earum natus
+                                dolorum?</p>
+                        </div>
+
+                </div>
+                <!-- Checkup line2 -->
+                <div class="set_2 ms-3">
+                    <p class="line2 ms-1"></p>
+                    <i id="dot3" class="fa-sharp fa-regular fa-circle round "></i>
+                </div>
+
+                <!-- Experience_content_2 -->
+
+                <div class="Experience_content ms-2 mt-3">
+                    <h6 class="text-secondary ms-4"> 2017 - 2019
+                        <br>
+                        Company Name | 123 Anywhere St., Any City
+                        </h4>
+
+                        <div class="para1">
+                            <h5 class="text-dark ms-4 fw-bold">Social Media Manager</h5>
+
+                            <p class="align-items-center ms-4 text-secondary me-5">Lorem ipsum, dolor sit amet
+                                consectetur adipisicing elit. Molestias, molestiae quod. Veritatis autem impedit ut
+                                sapiente numquam possimus aperiam alias quod, cum soluta nam provident vel beatae
+                                perferendis, distinctio itaque molestiae temporibus maxime. Laborum ipsa, necessitatibus
+                                porro eligendi numquam possimus neque, dolorem ab at, veritatis vel enim earum natus
+                                dolorum?</p>
+                        </div>
+                </div>
+
+
+                <!-- Experience_content_3 -->
+
+                <div class="Experience_content ms-2 mt-3">
+                    <h6 class="text-secondary ms-4"> 2015 - 2017
+                        <br>
+                        Company Name | 123 Anywhere St., Any City
+                        </h4>
+
+                        <div class="para1">
+                            <h5 class="text-dark ms-4 fw-bold">Social Media Manager</h5>
+
+                            <p class="align-items-center ms-4 text-secondary me-5">Lorem ipsum, dolor sit amet
+                                consectetur adipisicing elit. Molestias, molestiae quod. Veritatis autem impedit ut
+                                sapiente numquam possimus aperiam alias quod, cum soluta nam provident vel beatae
+                                perferendis, distinctio itaque molestiae temporibus maxime. Laborum ipsa, necessitatibus
+                                porro eligendi numquam possimus neque, dolorem ab at, veritatis vel enim earum natus
+                                dolorum?</p>
+                        </div>
+                </div>
+
+                <!-- Checkup line3 -->
+                <div class="set_3 ms-3">
+                    <p class="line3 ms-1"></p>
+                </div>
+
+            </div>
+
+
+            <!-- Reference Section -->
+
+            <div class="Reference m-0">
+                <h5 class=" ms-3 text-dark  fw-bold">Reference</h5>
+                <div class="ms-3 line "></div>
+
+                <div class=" d-flex align-items-center justify-content-between">
+                    <div class="Reference_content">
+                        <h5 class="ms-3 mt-1">Estelle Darcy</h5>
+                        <h6 class="ms-3 mt-1">Wardiere Inc./ CEO</h6>
+                        <p class="m-0 ms-3"><b>Phone :</b> +123 456-789</p>
+                        <p class="m-0 ms-3"><b>Email :</b> hello@reallygreatsite.com</p>
+
+                    </div>
+
+                    <div class="Reference_content">
+                        <h5 class="ms-3 mt-1">Harpar Russo</h5>
+                        <h6 class="ms-3 mt-1">Wardiere Inc./ CEO</h6>
+                        <p class="m-0 ms-3"><b>Phone :</b> +123 456-789</p>
+                        <p class="m-0 ms-3"><b>Email :</b> hello@reallygreatsite.com</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div> <!-- right End -->
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+        <script>
+            const downloadButton = document.getElementById('btn');
+
+            // Add click event listener to the download button
+            downloadButton.addEventListener('click', function () {
+                // Select the page element
+                const pageElement = document.querySelector('#invoice');
+
+                // Set the HTML2PDF options
+                const options = {
+                    margin: 0,
+                    filename: 'cv.pdf',
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: { scale: 5 },
+                    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                };
+
+                // Generate PDF
+                html2pdf().set(options).from(pageElement).save();
+            });
+
+            function removebtn() {
+                downloadButton.parentNode.removeChild(downloadButton)
+            }
+
+
+        </script>
+
+</body>
+
+</html>
